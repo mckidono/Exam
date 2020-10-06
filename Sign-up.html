@@ -1,0 +1,79 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"  href="dksstyle.css">
+		<title>Sign-up</title>
+	</head>
+	<body class="page6">
+		<div class = "content">
+			<table cols="5" width="100%" >
+				<tr>
+					<header>
+
+					<th colspan="5"><a href="DarksoulsWebsite.html"><img src="darksoulslogo.png" width="60%"></a>
+					</header>
+					</font></th>
+				</tr>
+				<tr>
+					<td colspan="5">
+					</br>
+						<div id="rc_logo">
+</div>
+						<nav>
+							<div class="rc_nav" id="centered_nav">
+								<a href="index.html">Home</a>
+								<a href="lore.html">Lore</a>
+								<a href="DKS1.html">Dark Souls 1</a>
+								<a href="DKS2.html">Dark Souls 2</a>
+								<a href="DarkSouls3.html" >Dark Souls 3</a>
+								<a href="Sign.html">Sign-in/Sign-up</a>
+								<a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+							</div></nav>
+					</td>
+				</tr>
+		</font>
+	</table>
+	<br/><main>
+	<br/>
+	<br/>
+	<br/>
+		<form>
+			<fieldset style = "margin-left: 35%; margin-right: 35%; background-color: white;">
+			<center>
+				<legend><font size="+4">Sign Up</font></legend>
+		<font size="+2">Full Name	<input type="text" placeholder="First - Last" id="user">
+		<br/>
+		Username	<input type="text" placeholder="username" required>
+		<br/>
+	
+		Password	<input type="password" placeholder="password" required>
+		<br/>
+		Repeat password	<input type="password" placeholder="repeat password" required></font>
+		<br/>
+		<br/>
+		</center>
+		<a href="Sign.html"><font align="left" color="blue">I already have an account</font></a>
+		<br/>
+		<br/>
+		<br/>
+		<input type="button" value="Submit" onclick="Submit()">
+			</fieldset>
+		</form></main>
+			<footer>
+		<font color="white"><h1 align = "center" id = "result"></h1></font>
+		<script>
+		function Submit()
+		{
+			document.getElementById('result').innerHTML = "Hello!  " + document.getElementById('user').value + ", Your all good to signed in!";
+		}
+			function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "rc_nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "rc_nav";
+    }
+}
+		</script></footer>
+		</div></body>
+</html>
